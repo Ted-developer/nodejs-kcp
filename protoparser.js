@@ -115,7 +115,7 @@ var decodePB = function(data) {
     }
     if (map[wrap2cmd]) {
         var body = map[wrap2cmd].parser.deserializeBinary(wrap2.getBody());
-        console.log('=====develop=====', `recv ${wrap2cmd}`);
+        console.log('=====develop=====', `recv protobuf msg | ${wrap2cmd}`);
         // todo(chentao) 解析客户端参数字段, 移作他用
     } else {
         console.error("unrecognized cmd | " + wrap2cmd);
@@ -124,7 +124,8 @@ var decodePB = function(data) {
     var rspBody = map[wrap2cmd].getRsp();
     wrap2rsp.setBody(rspBody.serializeBinary());
     wrap1rsp.setBody(wrap2rsp.serializeBinary());
-    return encodeRsp(wrap1rsp.serializeBinary());
+    return wrap1rsp.serializeBinary()
+    // return encodeRsp(wrap1rsp.serializeBinary());
 }
 
 var encodeRsp = function(body) {
@@ -151,39 +152,6 @@ var encodeBst = function(body) {
 
 //================================================
 module.exports = {
-    decode: decodeReq,
+    // decode: decodeReq,
+    decode: decodePB,
 }
-
-// {
-//     "id":"1",
-//     "ext":{
-//         "seed":"1628494799733"
-//     }
-// }
-// {
-//     "id":"2",
-//     "items":[
-//         {
-//             "playerId":"510op3ow",
-//             "data":"3:39:59 PM,59",
-//             "timestamp":"1628494799830"
-//         }
-//     ],
-//     "ext":{
-//         "seed":"1628494799733"
-//     }
-// }
-
-// {
-//     "token":"3UL8eu/R7r7tZA16ErmrjEV6hJ8=",
-//     "routeId":"+GxCIWcSMfgbCw3yEmL7dlL3dMngBIdrtQWGwUA50wA="
-// }
-
-// {
-//     "Code":0,
-//     "Seq":"f011ee8b-eeeb-4266-b44e-30aa87ba5be4",
-//     "Msg":"ok",
-//     "Data":{
-
-//     }
-// }
