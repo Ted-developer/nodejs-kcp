@@ -125,7 +125,6 @@ var decodePB = function(data) {
     wrap2rsp.setBody(rspBody.serializeBinary());
     wrap1rsp.setBody(wrap2rsp.serializeBinary());
     return wrap1rsp.serializeBinary()
-    // return encodeRsp(wrap1rsp.serializeBinary());
 }
 
 var encodeRsp = function(body) {
