@@ -1,0 +1,1129 @@
+
+Êç
+proto.protocom.unity.mgobe"Ó
+ClientSendServerReqWrap1
+Version (	RVersion
+AppName (	RAppName
+Cmd (	RCmd
+Seq (	RSeq
+ClientIp (	RClientIp
+ServerIp (	RServerIp
+Business (	RBusiness
+AuthKey (	RAuthKey
+AuthType	 (RAuthType
+AuthIp
+ (	RAuthIp
+GameId (	RGameId
+Uid (RUid
+PlayerId (	RPlayerId
+Body (RBody"¯
+ServerSendClientBstWrap1
+version (	Rversion
+app_name (	RappName
+cmd (	Rcmd
+seq (	Rseq
+	client_ip (	RclientIp
+
+service_ip (	R	serviceIp
+business (	Rbusiness
+auth_key (	RauthKey
+	auth_type	 (RauthType
+auth_ip
+ (	RauthIp
+game_id (	RgameId
+uid (Ruid
+	player_id (	RplayerId
+body (Rbody"r
+ClientSendServerRspWrap1
+Seq (	RSeq
+ErrCode (RErrCode
+ErrMsg (	RErrMsg
+Body (RBody"[
+ClientSendServerReqWrap2+
+Cmd (2.com.unity.mgobe.ProtoCmdRCmd
+Body (RBody".
+ClientSendServerRspWrap2
+Body (RBody"l
+	EventInfo9
+
+event_type (2.com.unity.mgobe.EventTypeR	eventType
+seq (	Rseq
+body (Rbody"ç
+EventNetworkState
+game_id (	RgameId
+	player_id (	RplayerIdB
+network_state (2.com.unity.mgobe.NetworkStateRnetworkState"e
+HeartBeatReq:
+con_type (2.com.unity.mgobe.ConnectionTypeRconType
+route_id (	RrouteId"
+HeartBeatRsp"o
+ServerSendClientBstWrap2A
+type (2-.com.unity.mgobe.ServerSendClientBstWrap2TypeRtype
+msg (Rmsg""
+ NOUSEServerSendClientBstRspWrap2"@
+CheckLoginReq
+token (	Rtoken
+route_id (	RrouteId"
+CheckLoginRsp")
+PushBodyType
+push_msg (	RpushMsg"˝
+LoginReq
+game_id (	RgameId
+open_id (	RopenId
+platform (Rplatform
+channel (Rchannel
+nonce (Rnonce
+	timestamp (R	timestamp
+sign (	Rsign
+	device_id (	RdeviceId
+mac	 (	Rmac
+imei
+ (	Rimei"ò
+LoginRsp
+token (	Rtoken
+	player_id (	RplayerId
+expire_time (R
+expireTime8
+	sdkConfig (2.com.unity.mgobe.SdkConfigR	sdkConfig"»
+	SdkConfig#
+ping_interval (RpingInterval'
+report_interval (RreportInterval
+server_time (R
+serverTime
+
+enable_udp (R	enableUdp%
+disable_report (RdisableReport,
+disable_req_report (RdisableReqReport0
+disable_frame_report (RdisableFrameReport&
+min_report_size (RminReportSize"
+	LogoutReq"
+	LogoutRsp"
+StartFrameSyncReq"
+StartFrameSyncRsp"
+StopFrameSyncReq"
+StopFrameSyncRsp"Z
+	FrameItem
+	player_id (	RplayerId
+data (	Rdata
+	timestamp (R	timestamp"W
+SendFrameReq
+room_id (	RroomId.
+item (2.com.unity.mgobe.FrameItemRitem"
+SendFrameRsp""
+FrameExtInfo
+seed (Rseed"z
+Frame
+id (Rid0
+items (2.com.unity.mgobe.FrameItemRitems/
+ext (2.com.unity.mgobe.FrameExtInfoRext"õ
+RequestFrameReq
+room_id (	RroomId$
+begin_frame_id (RbeginFrameId 
+end_frame_id (R
+endFrameId'
+support_partial (RsupportPartial"`
+RequestFrameRsp.
+frames (2.com.unity.mgobe.FrameRframes
+
+is_partial (R	isPartial"©
+
+PlayerInfo
+id (	Rid
+name (	Rname
+team_id (	RteamId0
+custom_player_status (RcustomPlayerStatus%
+custom_profile (	RcustomProfileO
+common_network_state (2.com.unity.mgobe.NetworkStateRcommonNetworkStateM
+relay_network_state (2.com.unity.mgobe.NetworkStateRrelayNetworkState
+is_robot (RisRobotJ
+match_attributes	 (2.com.unity.mgobe.MatchAttributeRmatchAttributes"p
+TeamInfo
+id (	Rid
+name (	Rname
+min_players (R
+minPlayers
+max_players (R
+maxPlayers"Ò
+RoomInfo
+id (	Rid
+name (	Rname
+type (	Rtype@
+create_type (2.com.unity.mgobe.CreateRoomTypeR
+createType
+max_players (R
+maxPlayers
+owner (	Rowner
+
+is_private	 (R	isPrivate+
+custom_properties
+ (	RcustomProperties<
+player_list (2.com.unity.mgobe.PlayerInfoR
+playerList6
+	team_list (2.com.unity.mgobe.TeamInfoRteamListI
+frame_sync_state (2.com.unity.mgobe.FrameSyncStateRframeSyncState
+
+frame_rate (R	frameRate
+route_id (	RrouteId
+create_time (R
+createTime&
+start_game_time (RstartGameTime$
+is_forbid_join (RisForbidJoin"⁄
+CreateRoomReq
+	room_name (	RroomName
+	room_type (	RroomType@
+create_type (2.com.unity.mgobe.CreateRoomTypeR
+createType
+max_players (R
+maxPlayers
+
+is_private (R	isPrivate+
+custom_properties (	RcustomProperties<
+player_info	 (2.com.unity.mgobe.PlayerInfoR
+playerInfo
+region (	Rregion
+owner (	Rowner<
+player_list (2.com.unity.mgobe.PlayerInfoR
+playerList6
+	team_list (2.com.unity.mgobe.TeamInfoRteamList"G
+CreateRoomRsp6
+	room_info (2.com.unity.mgobe.RoomInfoRroomInfo"π
+JoinRoomReq
+room_id (	RroomId
+team_id (	RteamId:
+	join_type (2.com.unity.mgobe.JoinRoomTypeRjoinType<
+player_info (2.com.unity.mgobe.PlayerInfoR
+playerInfo"E
+JoinRoomRsp6
+	room_info (2.com.unity.mgobe.RoomInfoRroomInfo"
+LeaveRoomReq"F
+LeaveRoomRsp6
+	room_info (2.com.unity.mgobe.RoomInfoRroomInfo"
+DismissRoomReq"
+DismissRoomRsp"é
+ChangeRoomReq
+	room_name (	RroomName
+owner (	Rowner
+
+is_private (R	isPrivate+
+custom_properties (	RcustomProperties$
+is_forbid_join (RisForbidJoinX
+change_room_option_list (2!.com.unity.mgobe.ChangeRoomOptionRchangeRoomOptionList"G
+ChangeRoomRsp6
+	room_info (2.com.unity.mgobe.RoomInfoRroomInfo"™
+SvrChangeRoomReq
+	room_name (	RroomName
+owner (	Rowner
+
+is_private (R	isPrivate+
+custom_properties (	RcustomProperties$
+is_forbid_join (RisForbidJoin
+room_id (	RroomIdX
+change_room_option_list	 (2!.com.unity.mgobe.ChangeRoomOptionRchangeRoomOptionList"J
+SvrChangeRoomRsp6
+	room_info (2.com.unity.mgobe.RoomInfoRroomInfo";
+RemovePlayerReq(
+remove_player_id (	RremovePlayerId"I
+RemovePlayerRsp6
+	room_info (2.com.unity.mgobe.RoomInfoRroomInfo"W
+SvrRemovePlayerReq
+room_id (	RroomId(
+remove_player_id (	RremovePlayerId"L
+SvrRemovePlayerRsp6
+	room_info (2.com.unity.mgobe.RoomInfoRroomInfo"-
+GetRoomByRoomIdReq
+room_id (	RroomId"L
+GetRoomByRoomIdRsp6
+	room_info (2.com.unity.mgobe.RoomInfoRroomInfo"f
+SendToClientReq
+room_id (	RroomId(
+recv_player_list (	RrecvPlayerList
+msg (	Rmsg"
+SendToClientRsp"O
+ChangeCustomPlayerStatusReq0
+custom_player_status (RcustomPlayerStatus"U
+ChangeCustomPlayerStatusRsp6
+	room_info (2.com.unity.mgobe.RoomInfoRroomInfo"R
+SvrChangeCustomPlayerStatusReq0
+custom_player_status (RcustomPlayerStatus"X
+SvrChangeCustomPlayerStatusRsp6
+	room_info (2.com.unity.mgobe.RoomInfoRroomInfo"a
+ChangePlayerNetworkStateReqB
+network_state (2.com.unity.mgobe.NetworkStateRnetworkState"U
+ChangePlayerNetworkStateRsp6
+	room_info (2.com.unity.mgobe.RoomInfoRroomInfo"ï
+GetRoomListReq
+game_id (	RgameId
+page_no (RpageNo
+	page_size (RpageSize
+	room_type (	RroomType
+is_desc (RisDesc"w
+GetRoomListRsp
+game_id (	RgameId6
+	room_list (2.com.unity.mgobe.RoomInfoRroomList
+total (Rtotal"ê
+MatchRoomSimpleReq
+	room_type (	RroomType
+max_players (R
+maxPlayers<
+player_info (2.com.unity.mgobe.PlayerInfoR
+playerInfo"L
+MatchRoomSimpleRsp6
+	room_info (2.com.unity.mgobe.RoomInfoRroomInfo"
+MatchRoomComplexReq"
+MatchRoomComplexRsp"
+MatchPlayersSimpleReq"
+MatchPlayersSimpleRsp":
+MatchAttribute
+name (	Rname
+value (Rvalue"Â
+MatchPlayerInfo
+id (	Rid
+name (	Rname0
+custom_player_status (RcustomPlayerStatus%
+custom_profile (	RcustomProfileJ
+match_attributes (2.com.unity.mgobe.MatchAttributeRmatchAttributes?
+match_status (2.com.unity.mgobe.MatchStatusRmatchStatus
+team_id (	RteamId
+region (	Rregion
+team_leader	 (	R
+teamLeader
+sdk_version
+ (	R
+sdkVersion
+group_id (	RgroupId
+	team_type (	RteamType
+
+request_id (	R	requestId"Í
+MatchGroupPlayerInfo
+id (	Rid
+name (	Rname0
+custom_player_status (RcustomPlayerStatus%
+custom_profile (	RcustomProfileJ
+match_attributes (2.com.unity.mgobe.MatchAttributeRmatchAttributes?
+match_status (2.com.unity.mgobe.MatchStatusRmatchStatus
+team_id (	RteamId
+region (	Rregion
+team_leader	 (	R
+teamLeader
+sdk_version
+ (	R
+sdkVersion
+group_id (	RgroupId
+	team_type (	RteamType
+
+request_id (	R	requestId"…
+MatchGroupInfo
+id (	Rid
+leader (	Rleader$
+player_id_list (	RplayerIdListJ
+player_info_list (2 .com.unity.mgobe.MatchPlayerInfoRplayerInfoListJ
+match_attributes (2.com.unity.mgobe.MatchAttributeRmatchAttributes
+region (	Rregion
+sdk_version (	R
+sdkVersion
+team_id (	RteamId
+	team_type (	RteamType
+
+request_id (	R	requestId(
+start_match_time (RstartMatchTime
+is_robot (RisRobot"‰
+MatchTeamInfo
+team_id (	RteamId
+	team_name (	RteamName
+team_leader (	R
+teamLeader
+members (	RmembersJ
+match_attributes (2.com.unity.mgobe.MatchAttributeRmatchAttributes.
+member_sdk_versions (	RmemberSdkVersions
+	group_ids (	RgroupIds,
+group_sdk_versions (	RgroupSdkVersions
+	team_type (	RteamType"ƒ
+ProgressPlayerInfo
+	player_id (	RplayerId
+	team_name (	RteamNameJ
+match_attributes (2.com.unity.mgobe.MatchAttributeRmatchAttributes(
+start_match_time (RstartMatchTime"c
+MatchmakerTeam
+name (	Rname=
+players (2#.com.unity.mgobe.ProgressPlayerInfoRplayers"b
+MatchmakerData
+match_id (	RmatchId5
+teams (2.com.unity.mgobe.MatchmakerTeamRteams"ı
+MatchPlacementInfo
+game_id (	RgameId
+
+match_code (	R	matchCode
+match_id (	RmatchId7
+type (2#.com.unity.mgobe.MatchPlacementTypeRtypeF
+create_room_req (2.com.unity.mgobe.CreateRoomReqRcreateRoomReq0
+matchmaker_data_json (	RmatchmakerDataJson8
+status (2 .com.unity.mgobe.PlacementStatusRstatus
+result_body	 (R
+resultBody"[
+MgobePlacementJobF
+create_room_req (2.com.unity.mgobe.CreateRoomReqRcreateRoomReq"N
+MgobePlacementResult6
+	room_info (2.com.unity.mgobe.RoomInfoRroomInfo"Ç
+GsePlacementJobF
+create_room_req (2.com.unity.mgobe.CreateRoomReqRcreateRoomReq'
+matchmaker_data (	RmatchmakerData"_
+GsePlacementResultI
+gse_game_session (2.com.unity.mgobe.GseGameSessionRgseGameSession"
+ThirdpartyPlacementJob"
+ThirdpartyPlacementResult"î
+GsePlayerLatency6
+latency_in_milliseconds (RlatencyInMilliseconds
+	player_id (	RplayerId+
+region_identifier (	RregionIdentifier"9
+GseGameProperty
+key (	Rkey
+value (	Rvalue"a
+GsePlacedPlayerSession
+	player_id (	RplayerId*
+player_session_id (	RplayerSessionId"ˇ
+GseGameSession!
+placement_id (	RplacementIdB
+game_server_session_queue_name (	RgameServerSessionQueueNameL
+player_latencies (2!.com.unity.mgobe.GsePlayerLatencyRplayerLatencies8
+status (2 .com.unity.mgobe.PlacementStatusRstatus
+dns_name (	RdnsName3
+game_server_session_id (	RgameServerSessionId7
+game_server_session_name (	RgameServerSessionName;
+game_server_session_region (	RgameServerSessionRegionI
+game_properties	 (2 .com.unity.mgobe.GseGamePropertyRgameProperties?
+maximum_player_session_count
+ (RmaximumPlayerSessionCount7
+game_server_session_data (	RgameServerSessionData
+
+ip_address (	R	ipAddress
+port (Rport'
+matchmaker_data (	RmatchmakerData]
+placed_player_sessions (2'.com.unity.mgobe.GsePlacedPlayerSessionRplacedPlayerSessions
+
+start_time (R	startTime
+end_time (RendTime"»
+PlaceMatchReq
+seq (	Rseq
+game_id (	RgameId
+match_id (	RmatchId7
+type (2#.com.unity.mgobe.MatchPlacementTypeRtype
+job_body (RjobBody
+
+match_code (	R	matchCode"l
+PlaceMatchRsp[
+match_placement_result (2%.com.unity.mgobe.MatchPlacementResultRmatchPlacementResult"™
+MatchPlacementResult
+seq (	Rseq
+game_id (	RgameId
+match_id (	RmatchId7
+type (2#.com.unity.mgobe.MatchPlacementTypeRtype8
+status (2 .com.unity.mgobe.PlacementStatusRstatus
+result_body (R
+resultBody
+err_code (RerrCode
+
+match_code (	R	matchCode"|
+UpdateMatchPlacementResultReq[
+match_placement_result (2%.com.unity.mgobe.MatchPlacementResultRmatchPlacementResult"
+UpdateMatchPlacementResultRsp"§
+CmqPlacementResult!
+placement_id (	RplacementIdJ
+placement_type (2#.com.unity.mgobe.MatchPlacementTypeRplacementType
+result_body (R
+resultBody"s
+MatchPlayersReq
+
+match_code (	R	matchCodeA
+player_info (2 .com.unity.mgobe.MatchPlayerInfoR
+playerInfo"0
+MatchPlayersRsp
+
+match_code (	R	matchCode"
+MatchGroupReq
+
+match_code (	R	matchCodeO
+player_info_list (2%.com.unity.mgobe.MatchGroupPlayerInfoRplayerInfoList".
+MatchGroupRsp
+
+match_code (	R	matchCode":
+DescribeMatchReq&
+request_id_list (	RrequestIdList"¨
+MatchProgress
+
+request_id (	R	requestId$
+player_id_list (	RplayerIdListJ
+player_info_list (2 .com.unity.mgobe.MatchPlayerInfoRplayerInfoList
+status (	Rstatus
+
+event_type (R	eventTypeT
+player_info_success_list (2.com.unity.mgobe.PlayerInfoRplayerInfoSuccessList?
+team_info_list (2.com.unity.mgobe.TeamInfoRteamInfoList%
+completed_time (RcompletedTime(
+start_match_time	 (RstartMatchTimek
+game_session_connection_info
+ (2*.com.unity.mgobe.GameSessionConnectionInfoRgameSessionConnectionInfo"b
+DescribeMatchRspN
+match_progress_list (2.com.unity.mgobe.MatchProgressRmatchProgressList"Q
+CancelPlayerMatchReq9
+
+match_type (2.com.unity.mgobe.MatchTypeR	matchType"
+CancelPlayerMatchRsp"ú
+ApiMatchGroupReq
+
+match_code (	R	matchCodeJ
+player_info_list (2 .com.unity.mgobe.MatchPlayerInfoRplayerInfoList
+
+request_id (	R	requestId"1
+ApiMatchGroupRsp
+
+request_id (	R	requestId"=
+ApiDescribeMatchReq&
+request_id_list (	RrequestIdList"«
+ApiDescribeMatchRspN
+match_progress_list (2.com.unity.mgobe.MatchProgressRmatchProgressList
+game_id (	RgameId
+
+match_code (	R	matchCode(
+start_match_time (RstartMatchTime"»
+GameSessionConnectionInfo
+dns_name (	RdnsName
+
+ip_address (	R	ipAddress]
+matched_player_sessions (2%.com.unity.mgobe.MatchedPlayerSessionRmatchedPlayerSessions
+port (Rport"_
+MatchedPlayerSession
+	player_id (	RplayerId*
+player_session_id (	RplayerSessionId"Å
+StartMatchPlacement
+region (	Rregion!
+placement_id (	RplacementId
+
+queue_name (	R	queueName?
+maximum_player_session_count (RmaximumPlayerSessionCount]
+desired_player_sessions (2%.com.unity.mgobe.DesiredPlayerSessionRdesiredPlayerSessionsF
+game_properties (2.com.unity.mgobe.GamePropertyRgameProperties(
+match_maker_data (	RmatchMakerData"T
+DesiredPlayerSession
+	player_id (	RplayerId
+player_data (	R
+playerData"6
+GameProperty
+key (	Rkey
+value (	Rvalue"|
+ApiCancelPlayerMatchReq9
+
+match_type (2.com.unity.mgobe.MatchTypeR	matchType&
+request_id_list (	RrequestIdList"A
+ApiCancelPlayerMatchRsp&
+request_id_list (	RrequestIdList"G
+CreateRoomBst6
+	room_info (2.com.unity.mgobe.RoomInfoRroomInfo"H
+DestroyRoomBst6
+	room_info (2.com.unity.mgobe.RoomInfoRroomInfo"k
+JoinRoomBst6
+	room_info (2.com.unity.mgobe.RoomInfoRroomInfo$
+join_player_id (	RjoinPlayerId"n
+LeaveRoomBst6
+	room_info (2.com.unity.mgobe.RoomInfoRroomInfo&
+leave_player_id (	RleavePlayerId"s
+RemovePlayerBst6
+	room_info (2.com.unity.mgobe.RoomInfoRroomInfo(
+remove_player_id (	RremovePlayerId"H
+DismissRoomBst6
+	room_info (2.com.unity.mgobe.RoomInfoRroomInfo"G
+ChangeRoomBst6
+	room_info (2.com.unity.mgobe.RoomInfoRroomInfo"d
+RecvFromClientBst
+room_id (	RroomId$
+send_player_id (	RsendPlayerId
+msg (	Rmsg"±
+ChangeCustomPlayerStatusBst(
+change_player_id (	RchangePlayerId0
+custom_player_status (RcustomPlayerStatus6
+	room_info (2.com.unity.mgobe.RoomInfoRroomInfo"Á
+ChangePlayerNetworkStateBst(
+change_player_id (	RchangePlayerIdB
+network_state (2.com.unity.mgobe.NetworkStateRnetworkState6
+	room_info (2.com.unity.mgobe.RoomInfoRroomInfo"
+group_id_list (	RgroupIdList"g
+MatchTimeoutBst9
+
+match_type (2.com.unity.mgobe.MatchTypeR	matchType
+err_code (RerrCode"L
+CancelMatchBst
+
+match_code (	R	matchCode
+	player_id (	RplayerId"Ñ
+MatchPlayersBst9
+
+match_type (2.com.unity.mgobe.MatchTypeR	matchType6
+	room_info (2.com.unity.mgobe.RoomInfoRroomInfo"K
+StartFrameSyncBst6
+	room_info (2.com.unity.mgobe.RoomInfoRroomInfo"J
+StopFrameSyncBst6
+	room_info (2.com.unity.mgobe.RoomInfoRroomInfo"<
+RecvFrameBst,
+frame (2.com.unity.mgobe.FrameRframe"c
+GameSvrCommunication7
+type (2#.com.unity.mgobe.GameSvrForwardTypeRtype
+body (Rbody"W
+NotifyRelayConnectionReq
+room_id (	RroomId
+ip (	Rip
+port (Rport"g
+NotifyRoomEventReq?
+cmd (2-.com.unity.mgobe.ServerSendClientBstWrap2TypeRcmd
+msg (Rmsg"\
+SendToGameSvrReq
+room_id (	RroomId
+	player_id (	RplayerId
+data (	Rdata"
+SendToGameSvrRsp"p
+RecvFromGameSvrBst
+room_id (	RroomId-
+recv_player_id_list (	RrecvPlayerIdList
+data (	Rdata"
+ClientRecvFromGameSvrRsp"˝
+	GroupInfo
+id (	Rid
+name (	Rname.
+type (2.com.unity.mgobe.GroupTypeRtype
+max_players (R
+maxPlayers
+owner (	Rowner+
+custom_properties (	RcustomProperties
+create_time (R
+createTime$
+is_forbid_join (RisForbidJoin#
+is_persistent	 (RisPersistentL
+group_player_list
+ (2 .com.unity.mgobe.GroupPlayerInfoRgroupPlayerList"ç
+GroupPlayerInfo
+id (	Rid
+name (	Rname;
+custom_group_player_status (RcustomGroupPlayerStatus=
+custom_group_player_profile (	RcustomGroupPlayerProfileZ
+common_group_network_state (2.com.unity.mgobe.NetworkStateRcommonGroupNetworkState"∆
+CreateGroupReq
+
+group_name (	R	groupName9
+
+group_type (2.com.unity.mgobe.GroupTypeR	groupType
+max_players (R
+maxPlayers+
+custom_properties (	RcustomPropertiesA
+player_info (2 .com.unity.mgobe.GroupPlayerInfoR
+playerInfo$
+is_forbid_join (RisForbidJoin#
+is_persistent (RisPersistent"K
+CreateGroupRsp9
+
+group_info (2.com.unity.mgobe.GroupInfoR	groupInfo"l
+JoinGroupReq
+group_id (	RgroupIdA
+player_info (2 .com.unity.mgobe.GroupPlayerInfoR
+playerInfo"I
+JoinGroupRsp9
+
+group_info (2.com.unity.mgobe.GroupInfoR	groupInfo"*
+LeaveGroupReq
+group_id (	RgroupId"J
+LeaveGroupRsp9
+
+group_info (2.com.unity.mgobe.GroupInfoR	groupInfo",
+DismissGroupReq
+group_id (	RgroupId"
+DismissGroupRsp"ê
+ChangeGroupReq
+group_id (	RgroupId
+
+group_name (	R	groupName
+owner (	Rowner+
+custom_properties (	RcustomProperties$
+is_forbid_join (RisForbidJoin[
+change_group_option_list (2".com.unity.mgobe.ChangeGroupOptionRchangeGroupOptionList"K
+ChangeGroupRsp9
+
+group_info (2.com.unity.mgobe.GroupInfoR	groupInfo"[
+RemoveGroupPlayerReq
+group_id (	RgroupId(
+remove_player_id (	RremovePlayerId"Q
+RemoveGroupPlayerRsp9
+
+group_info (2.com.unity.mgobe.GroupInfoR	groupInfo"1
+GetGroupByGroupIdReq
+group_id (	RgroupId"Q
+GetGroupByGroupIdRsp9
+
+group_info (2.com.unity.mgobe.GroupInfoR	groupInfo"
+GetMyGroupsReq"T
+GetMyGroupsRspB
+group_info_list (2.com.unity.mgobe.GroupInfoRgroupInfoList"z
+ ChangeCustomGroupPlayerStatusReq
+group_id (	RgroupId;
+custom_group_player_status (RcustomGroupPlayerStatus"]
+ ChangeCustomGroupPlayerStatusRsp9
+
+group_info (2.com.unity.mgobe.GroupInfoR	groupInfo"™
+SendToGroupClientReq
+group_id (	RgroupId(
+recv_player_list (	RrecvPlayerList
+msg (	Rmsg;
+	recv_type (2.com.unity.mgobe.GroupRecvTypeRrecvType"
+SendToGroupClientRsp"O
+GroupPlayers
+group_id (	RgroupId$
+player_id_list (	RplayerIdList"©
+ChangeGroupPlayerNetworkReqB
+network_state (2.com.unity.mgobe.NetworkStateRnetworkState
+	player_id (	RplayerId
+game_id (	RgameId
+seq (	Rseq"a
+ChangeGroupPlayerNetworkRspB
+group_players (2.com.unity.mgobe.GroupPlayersRgroupPlayers"o
+JoinGroupBst9
+
+group_info (2.com.unity.mgobe.GroupInfoR	groupInfo$
+join_player_id (	RjoinPlayerId"r
+LeaveGroupBst9
+
+group_info (2.com.unity.mgobe.GroupInfoR	groupInfo&
+leave_player_id (	RleavePlayerId"L
+DismissGroupBst9
+
+group_info (2.com.unity.mgobe.GroupInfoR	groupInfo"K
+ChangeGroupBst9
+
+group_info (2.com.unity.mgobe.GroupInfoR	groupInfo"{
+RemoveGroupPlayerBst9
+
+group_info (2.com.unity.mgobe.GroupInfoR	groupInfo(
+remove_player_id (	RremovePlayerId"À
+ ChangeGroupPlayerNetworkStateBst9
+
+group_info (2.com.unity.mgobe.GroupInfoR	groupInfo(
+change_player_id (	RchangePlayerIdB
+network_state (2.com.unity.mgobe.NetworkStateRnetworkState"ƒ
+ ChangeCustomGroupPlayerStatusBst9
+
+group_info (2.com.unity.mgobe.GroupInfoR	groupInfo(
+change_player_id (	RchangePlayerId;
+custom_group_player_status (RcustomGroupPlayerStatus"k
+RecvFromGroupClientBst
+group_id (	RgroupId$
+send_player_id (	RsendPlayerId
+msg (	Rmsg*'
+ConnectionType
+
+COMMON 	
+RELAY*0
+	EventType
+
+ET_Unknown 
+ET_NetworkState*í
+ServerSendClientBstWrap2Type
+E_PUSH_TYPE_TEST 
+E_PUSH_TYPE_RELAY
+E_PUSH_TYPE_GAMESVR
+E_PUSH_TYPE_JOIN_ROOMd
+E_PUSH_TYPE_LEAVE_ROOMe
+E_PUSH_TYPE_DISMISS_ROOMf
+E_PUSH_TYPE_REMOVE_PLAYERg$
+ E_PUSH_TYPE_MODIFY_ROOM_PROPERTYh
+E_PUSH_TYPE_NETWORK_STATEi
+E_PUSH_TYPE_ROOM_CHATj
+E_PUSH_TYPE_PLAYER_STATEk
+E_PUSH_TYPE_START_GAMEl
+E_PUSH_TYPE_STOP_GAMEm
+E_PUSH_TYPE_CREATE_ROOMn
+E_PUSH_TYPE_DESTROY_ROOMo
+E_PUSH_TYPE_MATCH_SUCCESS»
+E_PUSH_TYPE_MATCH_TIMEOUT…
+E_PUSH_TYPE_MATCH_CANCEL 
+E_PUSH_TYPE_JOIN_GROUPÙ
+E_PUSH_TYPE_LEAVE_GROUPı
+E_PUSH_TYPE_DISMISS_GROUPˆ&
+!E_PUSH_TYPE_MODIFY_GROUP_PROPERTY˜$
+E_PUSH_TYPE_REMOVE_GROUP_PLAYER¯#
+E_PUSH_TYPE_GROUP_PLAYER_STATE˘
+E_PUSH_TYPE_GROUP_CHAT˙*©
+ProtoCmd
+E_CMD_INVALID 
+E_CMD_HEART_BEAT_REQd
+E_CMD_CHECK_LOGIN_REQe
+E_CMD_LOGIN_TO_ROOM_REQf
+E_CMD_FORWARD_TO_RELAY_REQg
+E_CMD_LOGIN_REQË
+E_CMD_LOGOUT_REQÈ
+E_CMD_AUTH_REQÍ!
+E_CMD_QUERY_BY_PLAYER_ID_REQÎ
+E_CMD_QUERY_BY_GAME_ID_REQÏ
+E_CMD_GET_ROOM_DETAIL_REQ—
+E_CMD_JOIN_ROOM_REQ“
+E_CMD_QUIT_ROOM_REQ”
+E_CMD_CREATE_ROOM_REQ‘
+E_CMD_DESTORY_ROOM_REQ’
+E_CMD_REMOVE_MEMBER_REQ÷$
+E_CMD_CHANGE_ROOM_PROPERTIS_REQ◊
+E_CMD_DISSMISS_ROOM_REQÿ"
+E_CMD_CHANGE_PLAYER_STATE_REQŸ*
+%E_CMD_CHANGE_PLAYER_NETWORK_STATE_REQ⁄
+E_CMD_ROOM_CHAT_REQ€
+E_CMD_START_FRAME_SYNC_REQ‹
+E_CMD_STOP_FRAME_SYNC_REQ›
+E_CMD_GET_ROOM_LIST_REQﬁ 
+E_CMD_SVR_REMOVE_MEMBER_REQﬂ(
+#E_CMD_SVR_CHANGE_ROOM_PROPERTIS_REQ‡&
+!E_CMD_SVR_CHANGE_PLAYER_STATE_REQ·
+E_CMD_GET_ROOM_LIST_V2_REQ‚*
+%E_CMD_CREATE_ROOM_FOR_THIRD_PARTY_REQ„ 
+E_CMD_MATCH_ROOM_SIMPLE_REQπ 
+E_CMD_MATCH_USER_SIMPLE_REQ∫!
+E_CMD_MATCH_CANCEL_MATCH_REQª!
+E_CMD_MATCH_ROOM_COMPLEX_REQº#
+E_CMD_MATCH_PLAYER_COMPLEX_REQΩ
+E_CMD_MATCH_GROUP_REQæ
+E_CMD_RELAY_SEND_FRAME_REQ†"
+E_CMD_RELAY_REQUEST_FRAME_REQ°*
+%E_CMD_RELAY_CLIENT_SENDTO_GAMESVR_REQ¢-
+(E_CMD_RELAY_CLIENT_RECV_FROM_GAMESVR_REQ£
+E_CMD_NOTIFY_JOIN_ROOMà'
+E_CMD_NOTIFY_QUIT_ROOMâ'
+E_CMD_NOTIFY_DESTORY_ROOMä'
+E_CMD_NOTIFY_NET_STATEã'
+E_CMD_NOTIFY_KICK_MEMBERå'$
+E_CMD_GET_ADDR_BY_ROUTER_ID_REQ.
+E_CMD_GET_GROUP_DETAIL_REQŸ6
+E_CMD_JOIN_GROUP_REQ⁄6
+E_CMD_QUIT_GROUP_REQ€6
+E_CMD_CREATE_GROUP_REQ‹6"
+E_CMD_REMOVE_GROUP_MEMBER_REQ›6&
+!E_CMD_CHANGE_GROUP_PROPERTIES_REQﬁ6
+E_CMD_DISMISS_GROUP_REQﬂ6(
+#E_CMD_CHANGE_GROUP_PLAYER_STATE_REQ‡60
++E_CMD_CHANGE_GROUP_PLAYER_NETWORK_STATE_REQ·6
+E_CMD_GROUP_CHAT_REQ‚6
+E_CMD_GET_GROUP_LIST_REQ„6*‚D
+QAppProtoErrCode	
+EC_OK 
+EC_REQ_BAD_PKG
+EC_CMD_INVALID
+EC_PARAMS_INVALID
+EC_INNER_ERROR
+EC_TIME_OUT
+EC_SERVER_BUSY
+EC_NO_RIGHT
+EC_ACCESS_CMD_INVALID_ERR» 
+EC_ACCESS_CMD_GET_TOKEN_ERR…#
+EC_ACCESS_CMD_TOKEN_PRE_EXPIRE  
+EC_ACCESS_CMD_INVALID_TOKENÀ!
+EC_ACCESS_PUSH_SERIALIZE_ERRÃ#
+EC_ACCESS_LOGIN_BODY_PARSE_ERRÕ
+EC_ACCESS_CONN_ERRŒ
+EC_ACCESS_GET_RS_IP_ERRœ 
+EC_ACCESS_ADD_COMM_CONN_ERR–!
+EC_ACCESS_ADD_HEART_CONN_ERR—!
+EC_ACCESS_ADD_RELAY_CONN_ERR“#
+EC_ACCESS_HEART_BODY_PARSE_ERR”#
+EC_ACCESS_GET_COMM_CONNECT_ERR‘$
+EC_ACCESS_GET_RELAY_CONNECT_ERR’ 
+EC_ACCESS_ACCESS_INFO_EMPTY÷%
+ EC_ACCESS_PLAYER_DUPLICATE_LOGIN◊%
+ EC_ACCESS_NOE_RELAY_OR_STATE_SVRÿ
+EC_PLAYER_GAME_NOT_EXISTêN
+EC_PLAYER_SECRET_KEY_FAILëN
+EC_PLAYER_SIGN_ERRíN
+EC_PLAYER_DUPLICATE_REQìN 
+EC_PLAYER_TIMESTAMP_INVALIDîN 
+EC_PLAYER_QUERY_PLAYER_FAILïN
+EC_PLAYER_ADD_PLAYER_FAILñN
+EC_PLAYER_QUERY_GAME_FAILóN
+EC_PLAYER_RECORD_NUM_ERRòN
+EC_PLAYER_GET_TOKEN_FAILôN
+EC_PLAYER_TOKEN_NOT_EXISTöN
+EC_PLAYER_TOKEN_INVALIDõN
+EC_PLAYER_CLEAR_TOKEN_FAILúN
+EC_PLAYER_LOCK_FAILùN
+EC_PLAYER_UNLOCK_FAILûN
+EC_PLAYER_SAVE_TOKEN_FAILüN"
+EC_PLAYER_GAME_OUT_OF_SERVICE†N"
+EC_ROOM_CREATE_NO_PERMISSION†ú#
+EC_ROOM_DESTORY_NO_PERMISSION°ú 
+EC_ROOM_JOIN_NO_PERMISSION¢ú)
+#EC_ROOM_REMOVE_PLAYER_NO_PERMISSION£ú,
+&EC_ROOM_MODIFY_PROPERTIES_NO_PEMISSION§ú$
+EC_ROOM_DISSMISS_NO_PERMISSION•ú'
+!EC_ROOM_REMOVE_SELF_NO_PERMISSION¶ú%
+EC_ROOM_CHECK_LOGIN_SESSION_ERRßú'
+!EC_ROOM_REMOVE_PLAYER_NOT_IN_ROOM®ú$
+EC_ROOM_PLAYER_ALREADY_IN_ROOM™ú 
+EC_ROOM_PLAYER_NOT_IN_ROOM´ú"
+EC_ROOM_PLAYERS_EXCEED_LIMIT¨ú
+EC_ROOM_JOIN_NOT_ALLOW≠ú!
+EC_ROOM_MAX_PLAYERS_INVALIDÆú
+EC_ROOM_CREATE_FAILØú
+EC_ROOM_PLAYER_OFFLINE∞ú 
+EC_ROOM_PARAM_PAGE_INVALID±ú!
+EC_ROOM_GET_PLAYER_INFO_ERR“ú
+EC_ROOM_GET_ROOM_INFO_ERR”ú
+EC_ROOM_MODIFY_OWNER_ERR‘ú*
+$EC_ROOM_MAX_ROOM_NUMBER_EXCEED_LIMIT’ú7
+*EC_ROOM_REMOVE_REDIS_PLAYER_ROOM_MATCH_ERR¨„˛ˇˇˇˇˇˇ/
+"EC_ROOM_REMOVE_REDIS_ROOM_INFO_ERR´„˛ˇˇˇˇˇˇ%
+EC_ROOM_REDIS_UPDATE_ERR™„˛ˇˇˇˇˇˇ'
+EC_ROOM_REDIS_GET_LOCK_ERR©„˛ˇˇˇˇˇˇ)
+EC_ROOM_REDIS_CHECK_LOCK_ERR®„˛ˇˇˇˇˇˇ'
+EC_ROOM_REDIS_DEL_LOCK_ERRß„˛ˇˇˇˇˇˇ
+EC_ROOM_QUERY_PLAYER_ERR‹ú
+EC_ROOM_QUERY_GAME_ERR›ú#
+EC_ROOM_PLAYER_INFO_NOT_EXISTﬁú!
+EC_ROOM_GAME_INFO_NOT_EXISTﬂú,
+EC_ROOM_HISTORY_INFO_INSERT_ERR†„˛ˇˇˇˇˇˇ#
+EC_ROOM_REGION_INFO_NOT_EXIST·ú
+EC_ROOM_QUERY_REGION_ERR‚ú 
+EC_ROOM_MODIFY_PLAYER_BUSYÊú
+EC_ROOM_INFO_UNEXISTú+
+%EC_ROOM_ALLOCATE_RELAYSVR_IP_PORT_ERR˙ú$
+EC_ROOM_INVALID_PARAMS_TEAM_IDÑù&
+ EC_ROOM_TEAM_MEMBER_LIMIT_EXCEEDÖù*
+EC_ROOM_ALLOCATE_SERVICE_FAILò‚˛ˇˇˇˇˇˇ
+EC_MATCH_NO_ROOM∞Í
+EC_MATCH_TIMEOUT±Í
+EC_MATCH_LOGIC_ERR≤Í
+EC_MATCH_ERR∫Í!
+EC_MATCH_PLAYER_IS_IN_MATCHªÍ"
+EC_MATCH_PLAYER_NOT_IN_MATCHºÍ!
+EC_MATCH_GET_MATCH_INFO_ERRΩÍ$
+EC_MATCH_UPDATE_MATCH_INFO_ERRæÍ
+EC_MATCH_CANCEL_FAILEDøÍ'
+!EC_MATCH_GET_PLAYER_LIST_INFO_ERR¿Í
+EC_MATCH_CREATE_ROOM_ERRŸÍ
+EC_MATCH_JOIN_ROOM_ERR⁄Í
+EC_MATCH_INVALID_PARAMS€Í%
+EC_MATCH_GROUP_NUM_EXCEED_LIMIT‹Í$
+EC_MATCH_PLAYER_ID_IS_REPEATED›Í1
++EC_MATCH_CREATE_ROOM_PLAYER_ALREADY_IN_ROOM‚Í
+EC_MATCH_QUERY_PLAYER_ERRîÎ$
+EC_MATCH_PLAYER_INFO_NOT_EXISTïÎ
+EC_MATCH_QUERY_GAME_ERRñÎ"
+EC_MATCH_GAME_INFO_NOT_EXISTóÎ
+EC_MATCH_QUERY_REGION_ERRòÎ$
+EC_MATCH_REGION_INFO_NOT_EXISTôÎ
+EC_MATCH_TEAM_FAILöÎ$
+EC_MATCH_PLAY_RULE_NOT_RUNNINGõÎ"
+EC_MATCH_PLAY_ATTR_NOT_FOUNDúÎ"
+EC_MATCH_PLAY_RULE_NOT_FOUNDùÎ/
+)EC_MATCH_PLAY_RULE_ATTR_SEGMENT_NOT_FOUNDûÎ!
+EC_MATCH_PLAY_RULE_FUNC_ERRüÎ#
+EC_MATCH_GET_PLAYER_ATTR_FAIL†Î!
+EC_MATCH_GET_TEAM_ATTR_FAIL°Î!
+EC_MATCH_NONE_TEAM_TYPE_FIT¢Î 
+EC_MATCH_TEAM_TYPE_INVALID£Î$
+EC_MATCH_PLAYER_ATTR_NOT_FOUND§Î#
+EC_MATCH_REQUEST_ID_NOT_EXIST•Î"
+EC_MATCH_REQUEST_ID_IS_EXIST¶Î
+EC_MATCH_TEAM_MATCH_FAILßÎ$
+EC_MATCH_ROBOT_GROUP_NOT_RIGHT®Î#
+EC_MATCH_ROBOT_TEAM_NOT_RIGHT©Î%
+EC_MATCH_INNER_LOGIC_ERR∫î˛ˇˇˇˇˇˇ&
+EC_MATCH_INNER_PARAMS_ERR∞î˛ˇˇˇˇˇˇ-
+ EC_MATCH_ROOM_INNER_ADD_NODE_ERR¶î˛ˇˇˇˇˇˇ-
+ EC_MATCH_ROOM_INNER_DEL_NODE_ERR•î˛ˇˇˇˇˇˇ)
+EC_MATCH_RESULT_TYPE_NOT_GSE§î˛ˇˇˇˇˇˇ
+EC_MATCH_REQUEST_CANCELED›Î
+EC_RELAY_ALREADY_EXISTS¿∏
+EC_RELAY_NOT_EXISTS¡∏"
+EC_RELAY_DATA_EXCEED_LIMITED¬∏$
+EC_RELAY_MEMBER_ALREADY_EXISTS√∏ 
+EC_RELAY_MEMBER_NOT_EXISTSƒ∏
+EC_RELAY_STATE_INVALID≈∏!
+EC_RELAY_INVALID_FRAME_RATE∆∏'
+!EC_RELAY_SET_FRAME_RATE_FORBIDDEN«∏
+EC_RELAY_NO_MEMBERS»∏'
+!EC_RELAY_GAMESVR_SERVICE_NOT_OPEN…∏
+EC_RELAY_REQ_POD_FAIL ∏
+EC_RELAY_NO_AVAILABLE_PODÀ∏#
+EC_RELAY_GET_FRAME_CACHE_FAILÃ∏
+EC_RELAY_HKV_CACHE_ERRORœ∏ 
+EC_RELAY_REDIS_CACHE_ERROR–∏&
+ EC_RELAY_NOTIFY_RELAYWORKER_FAIL“∏$
+EC_RELAY_RESET_RELAY_ROOM_FAIL”∏$
+EC_RELAY_CLEAN_RELAY_ROOM_FAIL‘∏
+EC_RELAY_NO_PERMISSION§π"
+EC_RELAY_NOTIFY_GAMESVR_FAILà∫&
+ EC_RELAY_FORWARD_TO_GAMESVR_FAILâ∫%
+EC_RELAY_FORWARD_TO_CLIENT_FAILä∫
+EC_GROUP_OPERATION_FAILED¢"
+EC_INVALID_PARAMS_GROUP_NAMEÒ¢"
+EC_INVALID_PARAMS_GROUP_TYPEÚ¢/
+)EC_INVALID_PARAMS_GROUP_CUSTOM_PROPERTIESÛ¢)
+#EC_INVALID_PARAMS_GROUP_PLAYER_NAMEÙ¢2
+,EC_INVALID_PARAMS_GROUP_PLAYER_CUSTOM_STATUSı¢6
+0EC_INVALID_PARAMS_GROUP_PLAYER_CUSTOM_PROPERTIESˆ¢)
+#EC_GROUP_MODIFY_OWNER_NO_PERMISSION˜¢ 
+EC_INVALID_PARAMS_GROUP_ID¯¢
+EC_INVALID_CHANGE_OPTION˘¢#
+EC_INVALID_PARAMS_GROUP_OWNER˙¢
+EC_PLAYER_IS_EXIST_GROUP˚¢"
+EC_PLAYER_IS_NOT_EXIST_GROUP¸¢"
+EC_REMOVE_PLAYER_ID_IS_EMPTY˝¢*
+$EC_GROUP_REMOVE_PLAYER_NO_PERMISSION˛¢'
+!EC_INVALID_PARAMS_GROUP_RECV_TYPEˇ¢&
+ EC_INVALID_PARAMS_RECV_PLAYER_IDÄ£&
+ EC_INVALID_PARAMS_MESSAGE_LENGTHÅ£"
+EC_INVALID_PARAMS_MAX_PLAYERÇ£,
+&PERSISTENCE_GROUP_NUM_EXCEED_THE_LIMITÉ£+
+%EC_INVALID_PARAMS_PLAYER_NOT_IN_GROUPÑ£#
+NO_GROUP_OPERATION_PERMISSIONÖ£+
+%EC_OPERATION_FAILED_GROUP_FORBID_JOINÜ£#
+EC_GROUP_CHAT_FREQUENCY_LIMITá£&
+ EC_GROUP_PLAYER_NUM_LIMIT_EXCEEDà£&
+ EC_PLAYER_GROUP_NUM_LIMIT_EXCEEDâ£
+EC_GROUP_NOT_EXISTä£
+EC_INVALID_PARAMS‡‘)
+#EC_INVALID_PARAMS_PLAY_MODE_VERSION·‘*
+$EC_INVALID_PARAMS_PLAY_MODE_RULETYPE‚‘,
+&EC_INVALID_PARAMS_PLAY_MODE_EXPRESSION„‘&
+ EC_INVALID_PARAMS_PLAY_MODE_TEAM‰‘#
+EC_INVALID_PARAMS_MSGQ_ENCODEÙ‘#
+EC_INVALID_PARAMS_MSGQ_DECODEı‘
+EC_INVALID_PARAMS_GAME_ID»‹#
+EC_INVALID_PARAMS_PLAYER_INFO…‹#
+EC_INVALID_PARAMS_MAX_PLAYERS ‹!
+EC_INVALID_PARAMS_ROOM_TYPEÀ‹!
+EC_INVALID_PARAMS_PLAYER_IDÃ‹"
+EC_INVALID_PARAMS_MATCH_TYPEÕ‹"
+EC_INVALID_PARAMS_MATCH_CODEŒ‹
+EC_INVALID_PARAMS_OPEN_IDœ‹ 
+EC_INVALID_PARAMS_PLATFORM–‹!
+EC_INVALID_PARAMS_TIMESTAMP—‹
+EC_INVALID_PARAMS_SIGN“‹
+EC_INVALID_PARAMS_NONCE”‹
+EC_INVALID_PARAMS_TOKEN‘‹%
+EC_INVALID_PARAMS_NETWORK_STATE’‹!
+EC_INVALID_PARAMS_ROOM_NAME÷‹(
+"EC_INVALID_PARAMS_CREATE_ROOM_TYPE◊‹!
+EC_INVALID_PARAMS_DEVICE_IDÿ‹
+EC_INVALID_PARAMS_PAGE_NOŸ‹!
+EC_INVALID_PARAMS_PAGE_SIZE⁄‹#
+EC_INVALID_PARAMS_PLAYER_LIST€‹
+EC_INVALID_PARAMS_MESSAGE‹‹#
+EC_INVALID_CHANGE_ROOM_OPTION›‹
+EC_INVALID_PARAMS_REGIONﬁ‹
+EC_INVALID_PARAMS_OWNERﬂ‹%
+EC_INVALID_PARAMS_OWNER_OPEN_ID‡‹)
+#EC_INVALID_PARAMS_OPEN_ID_DUPLICATE‚‹(
+"EC_INVALID_PARAMS_ROOM_CREATE_TYPE„‹ 
+EC_MYSPP_SYSTEM_ERRò¯ˇˇˇˇˇˇˇ#
+EC_REDIS_KEY_NOT_EXIST∞¸˚ˇˇˇˇˇˇ 
+EC_REDIS_SET_OP_ERRØ¸˚ˇˇˇˇˇˇ 
+EC_REDIS_GET_OP_ERRÆ¸˚ˇˇˇˇˇˇ 
+EC_REDIS_DEL_OP_ERR≠¸˚ˇˇˇˇˇˇ#
+EC_REDIS_EXPIRE_OP_ERR¨¸˚ˇˇˇˇˇˇ!
+EC_REDIS_LOCK_OP_ERR´¸˚ˇˇˇˇˇˇ(
+EC_REDIS_LOCK_ALREADY_EXIST™¸˚ˇˇˇˇˇˇ!
+EC_REDIS_LIST_OP_ERRú¸˚ˇˇˇˇˇˇ$
+EC_REDIS_LIST_POP_EMPTYõ¸˚ˇˇˇˇˇˇ,
+EC_REDIS_POOL_GET_INSTANCE_FAILö¸˚ˇˇˇˇˇˇ"
+EC_REDIS_SET_IS_EMPTYô¸˚ˇˇˇˇˇˇ'
+EC_REDIS_OP_INVALID_PARAMSò¸˚ˇˇˇˇˇˇ"
+EC_MYSQL_NO_ROW_FOUNDÃ˚˚ˇˇˇˇˇˇ%
+EC_MYSQL_MULTI_ROW_FOUNDÀ˚˚ˇˇˇˇˇˇ!
+EC_MYSQL_INSERT_FAIL ˚˚ˇˇˇˇˇˇ!
+EC_MYSQL_DELETE_FAIL…˚˚ˇˇˇˇˇˇ!
+EC_MYSQL_UPDATE_FAIL»˚˚ˇˇˇˇˇˇ!
+EC_MYSQL_QUERYS_FAIL«˚˚ˇˇˇˇˇˇ'
+EC_PB_SERIALIZE_TO_STR_ERRË˙˚ˇˇˇˇˇˇ%
+EC_PB_PARSE_FROM_STR_ERRÁ˙˚ˇˇˇˇˇˇ
+EC_DATA_FORMAT_ERRﬁ˙˚ˇˇˇˇˇˇ
+EC_JSON_FORMAT_ERR›˙˚ˇˇˇˇˇˇ)
+EC_JSON_PLAY_MODE_FORMAT_ERR‹˙˚ˇˇˇˇˇˇ)
+EC_JSON_PLAY_MODE_PARISE_ERR€˙˚ˇˇˇˇˇˇ(
+EC_INVALID_PARAMS_RECORE_ID◊˜˚ˇˇˇˇˇˇ
+EC_HASHID_ERRÙˆ˚ˇˇˇˇˇˇ!
+EC_HASHID_ENCODE_ERRÛˆ˚ˇˇˇˇˇˇ!
+EC_HASHID_DECODE_ERRÚˆ˚ˇˇˇˇˇˇ'
+EC_CONF_ROOM_ID_BUCKET_ERRèˆ˚ˇˇˇˇˇˇ
+EC_SDK_SEND_FAILëø
+EC_SDK_UNINITíø
+EC_SDK_RES_TIMEOUTìø
+EC_SDK_NO_LOGINîø
+EC_SDK_NO_CHECK_LOGINïø
+EC_SDK_SOCKET_ERRORñø
+EC_SDK_SOCKET_CLOSEóø
+EC_SDK_NO_ROOMòø
+EC_SDK_ENCODE_PARAM_FAILôø
+EC_SDK_INVALID_PARAMSöø*Z
+NetworkState
+COMMON_OFFLINE 
+COMMON_ONLINE
+RELAY_OFFLINE
+RELAY_ONLINE*M
+CreateRoomType
+COMMON_CREATE 
+MATCH_CREATE
+THIRD_PARTY_CREATE*%
+FrameSyncState
+STOP 	
+START*/
+JoinRoomType
+COMMON_JOIN 
+
+MATCH_JOIN*Ü
+ChangeRoomOption
+	ROOM_NAME 	
+OWNER
+	IS_VIEWED
+
+IS_INVITED
+
+IS_PRIVATE
+CUSTOM_PROPERTIES
+IS_FORBID_JOIN*B
+MatchStatus
+PENDING 
+MATCHING
+SUCCESS
+TIMEOUT*J
+MatchPlacementType
+MP_MGOBE 
+
+MP_GSE
+MP_THIRDPARTYˇˇˇˇˇˇˇˇˇ*£
+PlacementStatus
+	PS_UNKNOW 
+
+PS_PENDING
+PS_FULFILLED
+PS_CANCELLED
+PS_TIMED_OUT
+	PS_FAILED
+PS_TIMED_OUT_MQd
+PS_PLACE_MATCH_FAILe*C
+	MatchType
+PLAYER_SIMPLE 
+ROOM_SIMPLE
+PLAYER_COMPLEX*’
+GameSvrForwardType
+E_GS_FORWARDTYPE_DEFAULT &
+"E_GS_FORWARDTYPE_NOTIFY_CONNECTION&
+"E_GS_FORWARDTYPE_NOTIFY_ROOM_EVENT%
+!E_GS_FORWARDTYPE_NOTIFY_COM_EVENT*
+&E_GS_FORWARDTYPE_CLIENT_SENDTO_GAMESVR*.
+	GroupType
+GROUP_LIMITED 
+
+GROUP_MANY*k
+ChangeGroupOption
+
+GROUP_NAME 
+GROUP_OWNER
+GROUP_CUSTOM_PROPERTIES
+GROUP_IS_FORBID_JOIN*P
+GroupRecvType
+
+GROUP_NONE 
+	GROUP_ALL
+GROUP_OTHERS
+
+GROUP_SOMEbproto3
